@@ -39,7 +39,7 @@ public class NewsService {
 
 	        if (s instanceof FreeSubscriber) {
 	            int limit = 3;
-	            for (int i = 0; i < Math.min(limit, articles.size()); i++) {
+	            for (int i = 0; i < limit; i++) {
 	                Article a = articles.get(i);
 	                System.out.println((i+1) + ". " + a.getTitle() + " - " + a.getPublisher());
 	            }
